@@ -1,0 +1,186 @@
+@font-face {
+    font-family: gta;
+    src: url(font.ttf);
+}
+*{
+    padding: 0%;
+    margin: 0%;
+
+}
+body{
+    background-image: url(bg.jpg);
+    background-size: cover; 
+    background-repeat: no-repeat;
+    height: 100%;
+    
+}
+.black{
+    background-color: rgba(0, 0, 0, 0.633);
+    background-size: cover;
+    overflow: hidden; 
+    z-index: 1;
+}
+#nav{
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    position: fixed;
+}
+#logo img{
+    height: 50px;
+    width: 80px;
+    margin-left: 45px;
+    margin-top: 12%;
+}
+.nav-button div{
+    color: white;
+    width: 8vw;
+    text-align: center;
+    float: right;
+    margin-top: 23px;
+    margin-right: 10px;
+    padding: 4px;
+    padding-bottom: 4px;
+    height: 2vw;
+    font-size: larger;
+    font-family: gta;
+    box-shadow: 0 2px 40px black ;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.nav-button div:hover{
+    box-shadow: 0 2px 20px rgb(221, 0, 255) ;
+
+}
+#page1{
+    height: 15vw;
+    width: 100%;
+}
+#character{
+    position: absolute;
+    bottom: 0px;
+    left: 17vw;
+    height: 550px;
+    z-index: 4;
+    animation: charSHADOW;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;  
+    animation-fill-mode: forwards;
+}
+#right{
+    overflow: hidden;
+    padding-top: 220px;
+    color: white;
+    font-family: gta;
+    font-size: 100px;
+    position: absolute;
+    top: 0%;
+    width: 50%;
+    z-index: 3;
+
+
+}
+#left{
+    overflow: hidden;
+    padding-top: 220px;
+    color: white;
+    font-family: gta;
+    font-size: 14px;
+    position: absolute;
+    top: 0%;
+    right: 0;
+    height: 40vh;
+    width: 50%;
+    z-index: 3;
+
+}
+.para{
+    padding-left: 170px;
+    padding-right: 30px;
+    animation-name: paraAnimation;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    color: rgba(240, 248, 255, 0);
+    height: 50vh;
+
+}
+.more{
+
+    border: 1px solid rgba(255, 248, 248, 0);
+    padding-left: 9px;
+    width: 4vw;
+    height: 2vw;
+    margin-top: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    z-index: 4;
+}
+#w1{
+    height: 80px;
+    width: 100%;
+    padding-left: 600px;
+    animation-name: rightAnimation;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+}
+#w2{
+    height: 80px;
+    width: 100%;
+    padding-left: 600px;
+    animation-name: rightAnimation;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+}
+#w3{
+    height: 80px;
+    width: 100%;
+    padding-left: 600px;
+    animation-name: rightAnimation;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes charSHADOW {
+    to{
+        filter: drop-shadow(2px 2px 60px rgb(237, 121, 255));
+    }   
+}
+
+@keyframes rightAnimation {
+
+    to{
+        padding-left: 40px;
+    }
+    
+}
+@keyframes paraAnimation {
+
+    to{
+        border: 0px;
+        color: white;
+    }
+    
+}
+
+/* .page2{
+    height: 100%;
+    width: 100%;
+    margin: 10px;
+    z-index: 6;
+    background-color: aqua;
+} */
