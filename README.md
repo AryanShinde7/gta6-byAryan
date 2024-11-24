@@ -1,2 +1,2 @@
 # gta6-byAryan
-just a practice web page
+create this simple web page for practice purpose 
